@@ -17,7 +17,7 @@ public class dataDriven {
 	{
 	
 		FileInputStream fis = new FileInputStream(
-	            "C:\\Users\\Vinay.KumarAP\\eclipse-workspace\\Shopping_Cart\\testdata.xlsx");
+	            "C:\\Users\\admin\\eclipse-workspace\\Shopping_Cart\\testdata.xlsx");
 
 	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
