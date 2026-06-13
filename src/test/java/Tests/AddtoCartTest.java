@@ -2,6 +2,7 @@ package Tests;
 
 import java.util.List;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -24,6 +25,7 @@ public class AddtoCartTest extends BasePage {
 	@BeforeClass
 	public void init()
 	{
+		Utilities.setup();
 		cart= new Cart_Page(driver);
 		page= new Products_Page(driver);
 		utility = new Utilities(driver);
@@ -60,6 +62,12 @@ public class AddtoCartTest extends BasePage {
 	public void verifycart(int count)
 	{
 		Reusable_utility.cartview(count-1);
+	}
+	
+	@AfterTest
+	public void teardown()
+	{
+		Utilities.tearDown();
 	}
 
 }
