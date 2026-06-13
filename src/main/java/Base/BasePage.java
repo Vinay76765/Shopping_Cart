@@ -29,7 +29,7 @@ public class BasePage {
 	
 
 
-    @BeforeClass
+    
     public static void setup() {
     	config = new Config_reader();
         driver = new EdgeDriver();
@@ -39,14 +39,14 @@ public class BasePage {
      }
     
    
-    
+   
     public static void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
     
-    @AfterClass(alwaysRun = true)
+    
     public static void D_close()
     {
     	if(driver !=null)

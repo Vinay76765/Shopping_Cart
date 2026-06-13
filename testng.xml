@@ -10,8 +10,6 @@
 	  <class name="Tests.TestCasetest"/>
 	  <class name="Tests.ExistingRegisterTest"/>
 	  <class name="Tests.OneProducttest"/>
-	  
-
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
